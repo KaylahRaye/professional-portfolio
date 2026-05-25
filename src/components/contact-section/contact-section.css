@@ -3,13 +3,29 @@
 }
 
 .contact {
-  padding: clamp(2rem, 7vw, 4.5rem) 0 2rem;
+  padding: 0 0 2rem;
 }
 
 .contact-panel {
-  border-top: 1px solid var(--color-border);
-  padding: clamp(3.2rem, 8vw, 5.2rem) 0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 1.3rem;
+  box-shadow: var(--shadow-card);
+  margin-bottom: clamp(2.2rem, 5vw, 3rem);
+  padding: clamp(3rem, 7vw, 4.7rem) clamp(1.4rem, 7vw, 4rem);
+  position: relative;
   text-align: center;
+}
+
+.contact-panel::before {
+  background: var(--color-gold);
+  content: '';
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  width: clamp(4rem, 11vw, 6.5rem);
 }
 
 .contact h2 {
@@ -31,10 +47,8 @@
 }
 
 .footer-line {
-  border-top: 1px solid var(--color-border);
   color: var(--color-muted);
   font-size: 0.9rem;
-  padding-top: 1.7rem;
   text-align: center;
 }
 

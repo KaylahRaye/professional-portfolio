@@ -2,6 +2,10 @@
   display: block;
 }
 
+.what-i-do {
+  background: var(--color-background);
+}
+
 .service-grid {
   display: grid;
   gap: 1.25rem;
@@ -9,7 +13,7 @@
 }
 
 .service-card {
-  min-height: 240px;
+  min-height: 250px;
   padding: clamp(1.4rem, 3vw, 1.8rem);
 }
 
@@ -18,14 +22,18 @@
   content: '';
   display: block;
   height: 2px;
-  margin-bottom: 1.45rem;
-  width: 2.3rem;
+  margin-bottom: 1.55rem;
+  width: 2.65rem;
 }
 
 .service-card p {
   color: var(--color-muted);
   font-size: 0.95rem;
   margin-top: 1rem;
+}
+
+.service-card h3 {
+  color: var(--color-green);
 }
 
 @media (max-width: 1030px) {

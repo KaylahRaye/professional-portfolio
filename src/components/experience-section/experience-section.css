@@ -3,7 +3,8 @@
 }
 
 .experience {
-  background: var(--color-green);
+  background:
+    linear-gradient(135deg, var(--color-green-deep), var(--color-green) 62%, #285a4d);
   color: #f5eee4;
 }
 
@@ -17,19 +18,16 @@
 }
 
 .experience-grid {
-  border-top: 1px solid rgba(245, 238, 228, 0.24);
   display: grid;
-  gap: 0;
+  gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
 }
 
 .experience-card {
-  padding: clamp(1.8rem, 4vw, 2.4rem) clamp(1.2rem, 4vw, 2.5rem) 0 0;
-}
-
-.experience-card:not(:first-child) {
-  border-left: 1px solid rgba(245, 238, 228, 0.18);
-  padding-left: clamp(1.2rem, 4vw, 2.5rem);
+  background: rgba(255, 250, 243, 0.045);
+  border: 1px solid rgba(245, 238, 228, 0.16);
+  border-radius: 1.1rem;
+  padding: clamp(1.65rem, 4vw, 2.1rem);
 }
 
 .detail {
@@ -48,13 +46,6 @@
 
 @media (max-width: 790px) {
   .experience-grid {
-    display: block;
-  }
-
-  .experience-card:not(:first-child) {
-    border-left: 0;
-    border-top: 1px solid rgba(245, 238, 228, 0.18);
-    margin-top: 2rem;
-    padding-left: 0;
+    grid-template-columns: 1fr;
   }
 }

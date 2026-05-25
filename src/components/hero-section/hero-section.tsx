@@ -27,14 +27,24 @@ export class HeroSection {
               </a>
             </div>
           </div>
-          <aside class="focus-card" aria-label={hero.focusLabel}>
-            <p class="focus-title">{hero.focusLabel}</p>
-            <ul>
-              {hero.focusAreas.map(area => (
-                <li>{area}</li>
-              ))}
-            </ul>
-          </aside>
+          <div class="hero-panels">
+            <aside class="focus-card" aria-label={hero.focusLabel}>
+              <p class="panel-title">{hero.focusLabel}</p>
+              <ul>
+                {hero.focusAreas.map(area => (
+                  <li>{area}</li>
+                ))}
+              </ul>
+            </aside>
+            <aside class="lens-card" aria-label={hero.lensLabel}>
+              <p class="panel-title">{hero.lensLabel}</p>
+              <ul>
+                {hero.lensAreas.map(area => (
+                  <li>{area}</li>
+                ))}
+              </ul>
+            </aside>
+          </div>
         </div>
       </section>
     );

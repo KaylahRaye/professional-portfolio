@@ -3,7 +3,9 @@
 }
 
 .about {
-  background: var(--color-surface);
+  background:
+    linear-gradient(120deg, rgba(243, 234, 220, 0.55), transparent 50%),
+    var(--color-surface);
   border-bottom: 1px solid var(--color-border);
   border-top: 1px solid var(--color-border);
 }
@@ -23,6 +25,7 @@
   display: grid;
   font-size: 1.03rem;
   gap: 1.25rem;
+  padding-left: clamp(0rem, 3vw, 1.2rem);
 }
 
 blockquote {
@@ -31,12 +34,16 @@ blockquote {
   font-family: var(--font-display);
   font-size: clamp(1.3rem, 2.5vw, 1.55rem);
   line-height: 1.45;
-  margin: 0.8rem 0 0;
-  padding-left: 1.45rem;
+  margin: 1rem 0 0;
+  padding: 0.25rem 0 0.25rem 1.45rem;
 }
 
 @media (max-width: 780px) {
   .about-layout {
     grid-template-columns: 1fr;
+  }
+
+  .about-copy {
+    padding-left: 0;
   }
 }
