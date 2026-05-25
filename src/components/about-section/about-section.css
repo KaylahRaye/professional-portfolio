@@ -1,0 +1,42 @@
+:host {
+  display: block;
+}
+
+.about {
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  border-top: 1px solid var(--color-border);
+}
+
+.about-layout {
+  display: grid;
+  gap: clamp(2.2rem, 7vw, 6.5rem);
+  grid-template-columns: minmax(270px, 0.9fr) minmax(320px, 1.05fr);
+}
+
+.about h2 {
+  margin-top: 0.85rem;
+}
+
+.about-copy {
+  color: var(--color-muted);
+  display: grid;
+  font-size: 1.03rem;
+  gap: 1.25rem;
+}
+
+blockquote {
+  border-left: 3px solid var(--color-gold);
+  color: var(--color-green);
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 2.5vw, 1.55rem);
+  line-height: 1.45;
+  margin: 0.8rem 0 0;
+  padding-left: 1.45rem;
+}
+
+@media (max-width: 780px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+}

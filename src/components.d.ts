@@ -6,6 +6,16 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface AboutSection {
+    }
+    interface ContactSection {
+    }
+    interface ExperienceSection {
+    }
+    interface FeaturedProjectsSection {
+    }
+    interface HeroSection {
+    }
     interface MyComponent {
         /**
           * The first name
@@ -20,19 +30,100 @@ export namespace Components {
          */
         "middle"?: string;
     }
+    interface PortfolioPage {
+    }
+    interface SiteHeader {
+    }
+    interface WhatIDoSection {
+    }
+    interface WritingSection {
+    }
 }
 declare global {
+    interface HTMLAboutSectionElement extends Components.AboutSection, HTMLStencilElement {
+    }
+    var HTMLAboutSectionElement: {
+        prototype: HTMLAboutSectionElement;
+        new (): HTMLAboutSectionElement;
+    };
+    interface HTMLContactSectionElement extends Components.ContactSection, HTMLStencilElement {
+    }
+    var HTMLContactSectionElement: {
+        prototype: HTMLContactSectionElement;
+        new (): HTMLContactSectionElement;
+    };
+    interface HTMLExperienceSectionElement extends Components.ExperienceSection, HTMLStencilElement {
+    }
+    var HTMLExperienceSectionElement: {
+        prototype: HTMLExperienceSectionElement;
+        new (): HTMLExperienceSectionElement;
+    };
+    interface HTMLFeaturedProjectsSectionElement extends Components.FeaturedProjectsSection, HTMLStencilElement {
+    }
+    var HTMLFeaturedProjectsSectionElement: {
+        prototype: HTMLFeaturedProjectsSectionElement;
+        new (): HTMLFeaturedProjectsSectionElement;
+    };
+    interface HTMLHeroSectionElement extends Components.HeroSection, HTMLStencilElement {
+    }
+    var HTMLHeroSectionElement: {
+        prototype: HTMLHeroSectionElement;
+        new (): HTMLHeroSectionElement;
+    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLPortfolioPageElement extends Components.PortfolioPage, HTMLStencilElement {
+    }
+    var HTMLPortfolioPageElement: {
+        prototype: HTMLPortfolioPageElement;
+        new (): HTMLPortfolioPageElement;
+    };
+    interface HTMLSiteHeaderElement extends Components.SiteHeader, HTMLStencilElement {
+    }
+    var HTMLSiteHeaderElement: {
+        prototype: HTMLSiteHeaderElement;
+        new (): HTMLSiteHeaderElement;
+    };
+    interface HTMLWhatIDoSectionElement extends Components.WhatIDoSection, HTMLStencilElement {
+    }
+    var HTMLWhatIDoSectionElement: {
+        prototype: HTMLWhatIDoSectionElement;
+        new (): HTMLWhatIDoSectionElement;
+    };
+    interface HTMLWritingSectionElement extends Components.WritingSection, HTMLStencilElement {
+    }
+    var HTMLWritingSectionElement: {
+        prototype: HTMLWritingSectionElement;
+        new (): HTMLWritingSectionElement;
+    };
     interface HTMLElementTagNameMap {
+        "about-section": HTMLAboutSectionElement;
+        "contact-section": HTMLContactSectionElement;
+        "experience-section": HTMLExperienceSectionElement;
+        "featured-projects-section": HTMLFeaturedProjectsSectionElement;
+        "hero-section": HTMLHeroSectionElement;
         "my-component": HTMLMyComponentElement;
+        "portfolio-page": HTMLPortfolioPageElement;
+        "site-header": HTMLSiteHeaderElement;
+        "what-i-do-section": HTMLWhatIDoSectionElement;
+        "writing-section": HTMLWritingSectionElement;
     }
 }
 declare namespace LocalJSX {
+    interface AboutSection {
+    }
+    interface ContactSection {
+    }
+    interface ExperienceSection {
+    }
+    interface FeaturedProjectsSection {
+    }
+    interface HeroSection {
+    }
     interface MyComponent {
         /**
           * The first name
@@ -46,6 +137,14 @@ declare namespace LocalJSX {
           * The middle name
          */
         "middle"?: string;
+    }
+    interface PortfolioPage {
+    }
+    interface SiteHeader {
+    }
+    interface WhatIDoSection {
+    }
+    interface WritingSection {
     }
 
     interface MyComponentAttributes {
@@ -55,14 +154,32 @@ declare namespace LocalJSX {
     }
 
     interface IntrinsicElements {
+        "about-section": AboutSection;
+        "contact-section": ContactSection;
+        "experience-section": ExperienceSection;
+        "featured-projects-section": FeaturedProjectsSection;
+        "hero-section": HeroSection;
         "my-component": Omit<MyComponent, keyof MyComponentAttributes> & { [K in keyof MyComponent & keyof MyComponentAttributes]?: MyComponent[K] } & { [K in keyof MyComponent & keyof MyComponentAttributes as `attr:${K}`]?: MyComponentAttributes[K] } & { [K in keyof MyComponent & keyof MyComponentAttributes as `prop:${K}`]?: MyComponent[K] };
+        "portfolio-page": PortfolioPage;
+        "site-header": SiteHeader;
+        "what-i-do-section": WhatIDoSection;
+        "writing-section": WritingSection;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "about-section": LocalJSX.IntrinsicElements["about-section"] & JSXBase.HTMLAttributes<HTMLAboutSectionElement>;
+            "contact-section": LocalJSX.IntrinsicElements["contact-section"] & JSXBase.HTMLAttributes<HTMLContactSectionElement>;
+            "experience-section": LocalJSX.IntrinsicElements["experience-section"] & JSXBase.HTMLAttributes<HTMLExperienceSectionElement>;
+            "featured-projects-section": LocalJSX.IntrinsicElements["featured-projects-section"] & JSXBase.HTMLAttributes<HTMLFeaturedProjectsSectionElement>;
+            "hero-section": LocalJSX.IntrinsicElements["hero-section"] & JSXBase.HTMLAttributes<HTMLHeroSectionElement>;
             "my-component": LocalJSX.IntrinsicElements["my-component"] & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "portfolio-page": LocalJSX.IntrinsicElements["portfolio-page"] & JSXBase.HTMLAttributes<HTMLPortfolioPageElement>;
+            "site-header": LocalJSX.IntrinsicElements["site-header"] & JSXBase.HTMLAttributes<HTMLSiteHeaderElement>;
+            "what-i-do-section": LocalJSX.IntrinsicElements["what-i-do-section"] & JSXBase.HTMLAttributes<HTMLWhatIDoSectionElement>;
+            "writing-section": LocalJSX.IntrinsicElements["writing-section"] & JSXBase.HTMLAttributes<HTMLWritingSectionElement>;
         }
     }
 }

@@ -1,0 +1,50 @@
+:host {
+  display: block;
+}
+
+.project-grid {
+  display: grid;
+  gap: 1.4rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 305px;
+  padding: clamp(1.45rem, 3vw, 2rem);
+}
+
+.category {
+  color: var(--color-gold);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.project-card > p:not(.category) {
+  color: var(--color-muted);
+  margin: 1rem 0 1.6rem;
+}
+
+.text-link {
+  color: var(--color-green);
+  font-weight: 600;
+  margin-top: auto;
+}
+
+.text-link::after {
+  content: ' ->';
+}
+
+@media (max-width: 860px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    min-height: 0;
+  }
+}
