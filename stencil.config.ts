@@ -2,6 +2,7 @@ import { Config } from '@stencil/core';
 
 export const config: Config = {
   namespace: 'professional-portfolio',
+  globalStyle: 'src/global/app.css',
   outputTargets: [
     {
       type: 'dist',

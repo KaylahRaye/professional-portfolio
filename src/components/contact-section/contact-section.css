@@ -1,0 +1,45 @@
+:host {
+  display: block;
+}
+
+.contact {
+  padding: clamp(2rem, 7vw, 4.5rem) 0 2rem;
+}
+
+.contact-panel {
+  border-top: 1px solid var(--color-border);
+  padding: clamp(3.2rem, 8vw, 5.2rem) 0;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: clamp(2.55rem, 5vw, 3.65rem);
+  margin: 0.85rem 0 1.1rem;
+}
+
+.contact-description {
+  color: var(--color-muted);
+  margin: 0 auto;
+  max-width: 610px;
+}
+
+.contact-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2.2rem;
+}
+
+.footer-line {
+  border-top: 1px solid var(--color-border);
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  padding-top: 1.7rem;
+  text-align: center;
+}
+
+@media (max-width: 620px) {
+  .contact-links {
+    flex-direction: column;
+  }
+}
