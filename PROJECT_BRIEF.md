@@ -65,9 +65,7 @@ The initial landing page should remain a focused one-page experience with these 
    Summarize meaningful professional themes or accomplishments that establish credibility.
 5. Featured Projects
    Highlight safe-to-share current work and experiments: the professional portfolio, AI-assisted workflow experiments, and forthcoming Soul & Syntax writing space.
-6. Writing
-   Position Soul & Syntax as a forthcoming writing space with an external Substack destination only once it exists.
-7. Contact
+6. Contact
    Provide a clear, welcoming way to connect for professional opportunities and collaboration.
 
 ## Design direction

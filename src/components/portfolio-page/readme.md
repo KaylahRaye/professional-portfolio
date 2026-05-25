@@ -15,7 +15,6 @@
 - [what-i-do-section](../what-i-do-section)
 - [experience-section](../experience-section)
 - [featured-projects-section](../featured-projects-section)
-- [writing-section](../writing-section)
 - [contact-section](../contact-section)
 
 ### Graph
@@ -27,7 +26,6 @@ graph TD;
   portfolio-page --> what-i-do-section
   portfolio-page --> experience-section
   portfolio-page --> featured-projects-section
-  portfolio-page --> writing-section
   portfolio-page --> contact-section
   style portfolio-page fill:#f9f,stroke:#333,stroke-width:4px
 ```

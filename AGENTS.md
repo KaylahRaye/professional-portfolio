@@ -101,8 +101,7 @@ Build a one-page landing page with:
 3. What I Do
 4. Experience Highlights
 5. Featured Projects
-6. Writing
-7. Contact
+6. Contact
 
 ## Commands
 

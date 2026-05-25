@@ -15,7 +15,6 @@ export class PortfolioPage {
           <what-i-do-section></what-i-do-section>
           <experience-section></experience-section>
           <featured-projects-section></featured-projects-section>
-          <writing-section></writing-section>
           <contact-section></contact-section>
         </main>
       </div>

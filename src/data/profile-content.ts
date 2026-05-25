@@ -66,14 +66,6 @@ export interface ProfileContent {
     introduction: string;
     items: ProjectContent[];
   };
-  writing: {
-    label: string;
-    heading: string;
-    publication: string;
-    description: string;
-    status: string;
-    link?: LinkContent;
-  };
   contact: {
     label: string;
     heading: string;
@@ -93,7 +85,6 @@ export const profileContent: ProfileContent = {
       { label: 'About', href: '#about' },
       { label: 'Work', href: '#work' },
       { label: 'Projects', href: '#projects' },
-      { label: 'Writing', href: '#writing' },
       { label: 'Contact', href: '#contact' },
     ],
   },
@@ -196,17 +187,8 @@ export const profileContent: ProfileContent = {
         title: 'Soul & Syntax',
         description:
           'A forthcoming writing space for reflections on code, culture, and calling.',
-        link: { label: 'Writing details', href: '#writing' },
       },
     ],
-  },
-  writing: {
-    label: 'Writing',
-    heading: 'Soul & Syntax',
-    publication: 'A forthcoming writing space for reflections on code, culture, and calling.',
-    description:
-      'Soul & Syntax will be a home for personal and professional writing shaped by curiosity about engineering, teams, and meaningful work.',
-    status: 'Forthcoming - external link to come',
   },
   contact: {
     label: 'Contact',

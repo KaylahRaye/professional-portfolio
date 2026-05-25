@@ -36,8 +36,6 @@ export namespace Components {
     }
     interface WhatIDoSection {
     }
-    interface WritingSection {
-    }
 }
 declare global {
     interface HTMLAboutSectionElement extends Components.AboutSection, HTMLStencilElement {
@@ -94,12 +92,6 @@ declare global {
         prototype: HTMLWhatIDoSectionElement;
         new (): HTMLWhatIDoSectionElement;
     };
-    interface HTMLWritingSectionElement extends Components.WritingSection, HTMLStencilElement {
-    }
-    var HTMLWritingSectionElement: {
-        prototype: HTMLWritingSectionElement;
-        new (): HTMLWritingSectionElement;
-    };
     interface HTMLElementTagNameMap {
         "about-section": HTMLAboutSectionElement;
         "contact-section": HTMLContactSectionElement;
@@ -110,7 +102,6 @@ declare global {
         "portfolio-page": HTMLPortfolioPageElement;
         "site-header": HTMLSiteHeaderElement;
         "what-i-do-section": HTMLWhatIDoSectionElement;
-        "writing-section": HTMLWritingSectionElement;
     }
 }
 declare namespace LocalJSX {
@@ -144,8 +135,6 @@ declare namespace LocalJSX {
     }
     interface WhatIDoSection {
     }
-    interface WritingSection {
-    }
 
     interface MyComponentAttributes {
         "first": string;
@@ -163,7 +152,6 @@ declare namespace LocalJSX {
         "portfolio-page": PortfolioPage;
         "site-header": SiteHeader;
         "what-i-do-section": WhatIDoSection;
-        "writing-section": WritingSection;
     }
 }
 export { LocalJSX as JSX };
@@ -179,7 +167,6 @@ declare module "@stencil/core" {
             "portfolio-page": LocalJSX.IntrinsicElements["portfolio-page"] & JSXBase.HTMLAttributes<HTMLPortfolioPageElement>;
             "site-header": LocalJSX.IntrinsicElements["site-header"] & JSXBase.HTMLAttributes<HTMLSiteHeaderElement>;
             "what-i-do-section": LocalJSX.IntrinsicElements["what-i-do-section"] & JSXBase.HTMLAttributes<HTMLWhatIDoSectionElement>;
-            "writing-section": LocalJSX.IntrinsicElements["writing-section"] & JSXBase.HTMLAttributes<HTMLWritingSectionElement>;
         }
     }
 }
