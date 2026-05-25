@@ -17,12 +17,13 @@ export class ContactSection {
             <h2 id="contact-title">{contact.heading}</h2>
             <p class="contact-description">{contact.description}</p>
             <div class="contact-links">
-              {contact.links.map((link, index) => (
+              {contact.links.map(link => (
                 <a
-                  class={index === 0 ? 'button button-primary' : 'button button-secondary'}
+                  key={link.href}
+                  class={`button button-${link.variant}`}
                   href={link.href}
                   target={link.external ? '_blank' : undefined}
-                  rel={link.external ? 'noreferrer' : undefined}
+                  rel={link.external ? 'noopener noreferrer' : undefined}
                 >
                   {link.label}
                 </a>

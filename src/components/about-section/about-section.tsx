@@ -18,7 +18,7 @@ export class AboutSection {
           </div>
           <div class="about-copy">
             {about.paragraphs.map(paragraph => (
-              <p>{paragraph}</p>
+              <p key={paragraph}>{paragraph}</p>
             ))}
             <blockquote>{about.statement}</blockquote>
           </div>

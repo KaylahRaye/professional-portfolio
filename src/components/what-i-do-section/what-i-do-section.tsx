@@ -19,7 +19,7 @@ export class WhatIDoSection {
           </div>
           <div class="service-grid">
             {whatIDo.services.map(service => (
-              <article class="card service-card">
+              <article class="card service-card" key={service.title}>
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
               </article>

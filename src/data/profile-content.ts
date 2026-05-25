@@ -1,12 +1,19 @@
 export interface NavigationItem {
   label: string;
   href: string;
+  highlighted?: boolean;
 }
 
 export interface LinkContent {
   label: string;
   href: string;
   external?: boolean;
+}
+
+export type ButtonVariant = 'primary' | 'secondary';
+
+export interface ActionLinkContent extends LinkContent {
+  variant: ButtonVariant;
 }
 
 export interface CardContent {
@@ -38,8 +45,8 @@ export interface ProfileContent {
     title: string;
     positioning: string;
     introduction: string;
-    primaryAction: LinkContent;
-    secondaryAction: LinkContent;
+    primaryAction: ActionLinkContent;
+    secondaryAction: ActionLinkContent;
     focusLabel: string;
     focusAreas: string[];
     lensLabel: string;
@@ -73,7 +80,7 @@ export interface ProfileContent {
     label: string;
     heading: string;
     description: string;
-    links: LinkContent[];
+    links: ActionLinkContent[];
     footer: string;
   };
 }
@@ -88,7 +95,7 @@ export const profileContent: ProfileContent = {
       { label: 'About', href: '#about' },
       { label: 'Work', href: '#work' },
       { label: 'Projects', href: '#projects' },
-      { label: 'Contact', href: '#contact' },
+      { label: 'Contact', href: '#contact', highlighted: true },
     ],
   },
   hero: {
@@ -98,8 +105,8 @@ export const profileContent: ProfileContent = {
     positioning: 'A technical people leader helping teams, systems, and emerging talent grow with clarity and care.',
     introduction:
       'I bring frontend craft, engineering leadership, and thoughtful coaching together to create reliable products, aligned teams, and clear execution.',
-    primaryAction: { label: 'Explore my work', href: '#work' },
-    secondaryAction: { label: 'Connect with me', href: '#contact' },
+    primaryAction: { label: 'Explore my work', href: '#work', variant: 'primary' },
+    secondaryAction: { label: 'Connect with me', href: '#contact', variant: 'secondary' },
     focusLabel: 'Focused on',
     focusAreas: ['Engineering leadership', 'Frontend systems', 'Delivery and coaching', 'AI-assisted workflows'],
     lensLabel: 'Leadership lens',
@@ -208,10 +215,12 @@ export const profileContent: ProfileContent = {
         label: 'LinkedIn placeholder',
         href: 'https://www.linkedin.com/',
         external: true,
+        variant: 'primary',
       },
       {
         label: 'Email placeholder',
         href: 'mailto:hello@kaylahraye.com',
+        variant: 'secondary',
       },
     ],
     footer: 'Shikaylah Fewell | Technical leadership with clarity and care.',

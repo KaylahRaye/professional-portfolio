@@ -16,20 +16,6 @@ export namespace Components {
     }
     interface HeroSection {
     }
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
-    }
     interface PortfolioPage {
     }
     interface SiteHeader {
@@ -68,12 +54,6 @@ declare global {
         prototype: HTMLHeroSectionElement;
         new (): HTMLHeroSectionElement;
     };
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
-    }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
-    };
     interface HTMLPortfolioPageElement extends Components.PortfolioPage, HTMLStencilElement {
     }
     var HTMLPortfolioPageElement: {
@@ -98,7 +78,6 @@ declare global {
         "experience-section": HTMLExperienceSectionElement;
         "featured-projects-section": HTMLFeaturedProjectsSectionElement;
         "hero-section": HTMLHeroSectionElement;
-        "my-component": HTMLMyComponentElement;
         "portfolio-page": HTMLPortfolioPageElement;
         "site-header": HTMLSiteHeaderElement;
         "what-i-do-section": HTMLWhatIDoSectionElement;
@@ -115,40 +94,18 @@ declare namespace LocalJSX {
     }
     interface HeroSection {
     }
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
-    }
     interface PortfolioPage {
     }
     interface SiteHeader {
     }
     interface WhatIDoSection {
     }
-
-    interface MyComponentAttributes {
-        "first": string;
-        "middle": string;
-        "last": string;
-    }
-
     interface IntrinsicElements {
         "about-section": AboutSection;
         "contact-section": ContactSection;
         "experience-section": ExperienceSection;
         "featured-projects-section": FeaturedProjectsSection;
         "hero-section": HeroSection;
-        "my-component": Omit<MyComponent, keyof MyComponentAttributes> & { [K in keyof MyComponent & keyof MyComponentAttributes]?: MyComponent[K] } & { [K in keyof MyComponent & keyof MyComponentAttributes as `attr:${K}`]?: MyComponentAttributes[K] } & { [K in keyof MyComponent & keyof MyComponentAttributes as `prop:${K}`]?: MyComponent[K] };
         "portfolio-page": PortfolioPage;
         "site-header": SiteHeader;
         "what-i-do-section": WhatIDoSection;
@@ -163,7 +120,6 @@ declare module "@stencil/core" {
             "experience-section": LocalJSX.IntrinsicElements["experience-section"] & JSXBase.HTMLAttributes<HTMLExperienceSectionElement>;
             "featured-projects-section": LocalJSX.IntrinsicElements["featured-projects-section"] & JSXBase.HTMLAttributes<HTMLFeaturedProjectsSectionElement>;
             "hero-section": LocalJSX.IntrinsicElements["hero-section"] & JSXBase.HTMLAttributes<HTMLHeroSectionElement>;
-            "my-component": LocalJSX.IntrinsicElements["my-component"] & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
             "portfolio-page": LocalJSX.IntrinsicElements["portfolio-page"] & JSXBase.HTMLAttributes<HTMLPortfolioPageElement>;
             "site-header": LocalJSX.IntrinsicElements["site-header"] & JSXBase.HTMLAttributes<HTMLSiteHeaderElement>;
             "what-i-do-section": LocalJSX.IntrinsicElements["what-i-do-section"] & JSXBase.HTMLAttributes<HTMLWhatIDoSectionElement>;

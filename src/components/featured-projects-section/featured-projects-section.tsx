@@ -19,7 +19,7 @@ export class FeaturedProjectsSection {
           </div>
           <div class="project-grid">
             {projects.items.map(project => (
-              <article class="card project-card">
+              <article class="card project-card" key={project.title}>
                 <div class="project-meta">
                   <p class="category">{project.category}</p>
                   <p class="status">{project.status}</p>
