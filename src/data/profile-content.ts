@@ -212,15 +212,10 @@ export const profileContent: ProfileContent = {
       'If you are interested in engineering leadership, frontend craft, coaching, or thoughtful technical collaboration, I would be glad to hear from you.',
     links: [
       {
-        label: 'LinkedIn placeholder',
-        href: 'https://www.linkedin.com/',
+        label: 'Connect on LinkedIn',
+        href: 'https://www.linkedin.com/in/shikaylahfewell/',
         external: true,
         variant: 'primary',
-      },
-      {
-        label: 'Email placeholder',
-        href: 'mailto:hello@kaylahraye.com',
-        variant: 'secondary',
       },
     ],
     footer: 'Shikaylah Fewell | Technical leadership with clarity and care.',
