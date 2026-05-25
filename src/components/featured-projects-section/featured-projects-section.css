@@ -2,6 +2,12 @@
   display: block;
 }
 
+.projects {
+  background:
+    linear-gradient(180deg, rgba(243, 234, 220, 0.45), transparent 24rem),
+    var(--color-background);
+}
+
 .project-grid {
   display: grid;
   gap: 1.4rem;
@@ -11,8 +17,20 @@
 .project-card {
   display: flex;
   flex-direction: column;
-  min-height: 305px;
+  min-height: 320px;
+  overflow: hidden;
   padding: clamp(1.45rem, 3vw, 2rem);
+  position: relative;
+}
+
+.project-card::before {
+  background: var(--color-gold);
+  content: '';
+  height: 3px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .category {

@@ -41,6 +41,8 @@ export interface ProfileContent {
     secondaryAction: LinkContent;
     focusLabel: string;
     focusAreas: string[];
+    lensLabel: string;
+    lensAreas: string[];
   };
   about: {
     label: string;
@@ -98,7 +100,9 @@ export const profileContent: ProfileContent = {
     primaryAction: { label: 'Explore my work', href: '#work' },
     secondaryAction: { label: 'Connect with me', href: '#contact' },
     focusLabel: 'Focused on',
-    focusAreas: ['Engineering leadership', 'Frontend systems', 'Delivery and coaching'],
+    focusAreas: ['Engineering leadership', 'Frontend systems', 'Delivery and coaching', 'AI-assisted workflows'],
+    lensLabel: 'Leadership lens',
+    lensAreas: ['Clarity', 'Care', 'Technical judgment', 'Sustainable execution'],
   },
   about: {
     label: 'About',

@@ -3,28 +3,31 @@
 }
 
 .hero {
-  padding: clamp(4.6rem, 10vw, 8rem) 0 clamp(4.2rem, 9vw, 7rem);
+  border-bottom: 1px solid rgba(223, 207, 186, 0.55);
+  padding: clamp(4.5rem, 9vw, 7.25rem) 0 clamp(4.9rem, 9vw, 7.5rem);
   position: relative;
 }
 
 .hero::after {
-  background: var(--color-background-deep);
+  background:
+    radial-gradient(circle, rgba(170, 131, 80, 0.16), transparent 58%),
+    var(--color-background-deep);
   border-radius: 50%;
   content: '';
-  height: min(42vw, 460px);
-  opacity: 0.72;
+  height: min(44vw, 500px);
+  opacity: 0.8;
   position: absolute;
-  right: max(-170px, -12vw);
-  top: 3.2rem;
-  width: min(42vw, 460px);
+  right: max(-145px, -10vw);
+  top: 1.8rem;
+  width: min(44vw, 500px);
   z-index: 0;
 }
 
 .hero-layout {
-  align-items: end;
+  align-items: center;
   display: grid;
-  gap: clamp(2.5rem, 7vw, 6rem);
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 340px);
+  gap: clamp(2.75rem, 6vw, 5.25rem);
+  grid-template-columns: minmax(0, 1fr) minmax(285px, 375px);
   position: relative;
   z-index: 1;
 }
@@ -41,7 +44,7 @@
 }
 
 h1 {
-  font-size: clamp(3.1rem, 6.4vw, 5.35rem);
+  font-size: clamp(3.05rem, 6.1vw, 5.2rem);
   letter-spacing: -0.06em;
   max-width: 760px;
 }
@@ -67,15 +70,20 @@ h1 {
   margin-top: 2.3rem;
 }
 
+.hero-panels {
+  display: grid;
+  gap: 1rem;
+}
+
 .focus-card {
   background: var(--color-green);
-  border-radius: 0.9rem;
-  box-shadow: var(--shadow-card);
+  border-radius: 1.2rem;
+  box-shadow: var(--shadow-raised);
   color: #f8f2e9;
   padding: clamp(1.7rem, 4vw, 2.25rem);
 }
 
-.focus-title {
+.panel-title {
   color: #d2bb90;
   font-size: 0.75rem;
   font-weight: 700;
@@ -95,18 +103,52 @@ h1 {
   padding-bottom: 0;
 }
 
+.lens-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 1.2rem;
+  box-shadow: var(--shadow-card);
+  padding: 1.45rem 1.55rem 1.6rem;
+}
+
+.lens-card .panel-title {
+  color: var(--color-gold);
+  margin-bottom: 1rem;
+}
+
+.lens-card ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.lens-card li {
+  background: var(--color-green-soft);
+  border-radius: 999px;
+  color: var(--color-green);
+  font-size: 0.86rem;
+  font-weight: 600;
+  padding: 0.4rem 0.76rem;
+}
+
 @media (max-width: 880px) {
   .hero-layout {
     align-items: start;
     grid-template-columns: 1fr;
   }
 
-  .focus-card {
-    max-width: 440px;
+  .hero-panels {
+    max-width: 470px;
   }
 }
 
 @media (max-width: 620px) {
+  .hero::after {
+    height: 17rem;
+    right: -8rem;
+    width: 17rem;
+  }
+
   .actions {
     flex-direction: column;
   }
