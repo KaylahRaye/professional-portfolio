@@ -20,7 +20,7 @@ export class SiteHeader {
             <ul>
               {brand.navigation.map(item => (
                 <li>
-                  <a class={item.href === '#contact' ? 'nav-contact' : undefined} href={item.href}>
+                  <a class={item.href === '#contact' ? 'nav-link nav-contact' : 'nav-link'} href={item.href}>
                     {item.label}
                   </a>
                 </li>

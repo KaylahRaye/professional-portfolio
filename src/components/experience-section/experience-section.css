@@ -5,7 +5,20 @@
 .experience {
   background:
     linear-gradient(135deg, var(--color-green-deep), var(--color-green) 62%, #285a4d);
+  border-bottom: 1px solid rgba(170, 131, 80, 0.45);
+  border-top: 1px solid rgba(170, 131, 80, 0.35);
   color: #f5eee4;
+  position: relative;
+}
+
+.experience::before {
+  background: var(--color-gold);
+  content: '';
+  height: 2px;
+  left: clamp(1.35rem, 5vw, 3rem);
+  position: absolute;
+  top: -1px;
+  width: clamp(3.5rem, 7vw, 5.25rem);
 }
 
 .experience h2,
@@ -23,11 +36,15 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
+.experience .section-heading {
+  margin-bottom: clamp(2rem, 4vw, 2.8rem);
+}
+
 .experience-card {
   background: rgba(255, 250, 243, 0.045);
   border: 1px solid rgba(245, 238, 228, 0.16);
   border-radius: 1.1rem;
-  padding: clamp(1.65rem, 4vw, 2.1rem);
+  padding: clamp(1.5rem, 3vw, 1.95rem);
 }
 
 .detail {

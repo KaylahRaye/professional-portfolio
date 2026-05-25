@@ -4,6 +4,7 @@
 
 .what-i-do {
   background: var(--color-background);
+  border-bottom: 1px solid rgba(223, 207, 186, 0.55);
 }
 
 .service-grid {
@@ -13,7 +14,7 @@
 }
 
 .service-card {
-  min-height: 250px;
+  min-height: 232px;
   padding: clamp(1.4rem, 3vw, 1.8rem);
 }
 
