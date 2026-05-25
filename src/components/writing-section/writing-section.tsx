@@ -20,14 +20,16 @@ export class WritingSection {
           <div class="writing-copy">
             <p>{writing.description}</p>
             <p class="status">{writing.status}</p>
-            <a
-              class="button button-secondary"
-              href={writing.link.href}
-              target={writing.link.external ? '_blank' : undefined}
-              rel={writing.link.external ? 'noreferrer' : undefined}
-            >
-              {writing.link.label}
-            </a>
+            {writing.link && (
+              <a
+                class="button button-secondary"
+                href={writing.link.href}
+                target={writing.link.external ? '_blank' : undefined}
+                rel={writing.link.external ? 'noreferrer' : undefined}
+              >
+                {writing.link.label}
+              </a>
+            )}
           </div>
         </div>
       </section>

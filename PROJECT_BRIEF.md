@@ -2,28 +2,28 @@
 
 ## Project goal
 
-Create a warm, polished, one-page professional portfolio landing page for Shikaylah Fewell. The site should make her technical leadership, people leadership, frontend expertise, writing, and advocacy work immediately legible while offering a clear path to connect.
+Create a warm, polished, one-page professional portfolio landing page for Shikaylah Fewell. The site should establish her current credibility across technical leadership, people leadership, frontend engineering, delivery, and thoughtful communication while offering a clear path to connect.
 
-The site is not simply a resume rendered on the web. It should express the throughline of Shikaylah's work: helping teams, systems, and emerging talent grow with clarity and care.
+The site is not simply a resume rendered on the web. It should express the throughline of Shikaylah's current work: helping teams, systems, and emerging talent grow with clarity and care.
 
 ## Target audience
 
 The primary audiences are:
 
 - Engineering leaders, hiring managers, and collaborators seeking a credible technical people leader.
-- Organizations interested in engineering management, frontend leadership, mentorship, speaking, or advisory collaboration.
-- Emerging technologists and community partners engaging with tech access, representation, and workforce integration.
-- Readers interested in thoughtful perspectives on leadership, technology, growth, and access.
+- Organizations interested in engineering management, frontend leadership, coaching, delivery, or speaking.
+- Engineers and cross-functional collaborators interested in clear technical execution and people-first leadership.
+- Readers interested in thoughtful perspectives on code, culture, leadership, and growth.
 
 ## Professional positioning
 
-Shikaylah Fewell is a software engineering manager, frontend technologist, mentor, writer, and tech access advocate.
+Shikaylah Fewell is a software engineering manager and frontend technologist who leads with technical judgment, clarity, care, and a people-first approach.
 
 Preferred positioning statement:
 
 > A technical people leader helping teams, systems, and emerging talent grow with clarity and care.
 
-Her portfolio should communicate that people leadership is grounded in technical depth, frontend craft, and sound engineering judgment. Her nontraditional pathway is a meaningful source of perspective, empathy, and advocacy, not a disclaimer or a weakness.
+Her portfolio should communicate that people leadership is grounded in technical depth, frontend craft, sound engineering judgment, and reliable execution. It should show current professional credibility and leadership range without presenting private or future ideas as launched work.
 
 ## Key identity pillars
 
@@ -37,19 +37,19 @@ Her technical experience should be visible through her understanding of modern i
 
 ### People leadership and mentorship
 
-She develops people alongside products, creating conditions for feedback, growth, belonging, and career progress.
+She develops people alongside products, creating conditions for feedback, coaching, alignment, growth, and career progress.
 
-### Writing and thought leadership
+### Delivery and clarity
 
-Through Soul & Syntax, Shikaylah explores leadership, technology, identity, learning, and intentional career growth.
+She brings structure to delivery, risk conversations, priorities, and technical communication so teams can execute with confidence.
 
-### Tech access and representation
+### Thoughtful AI-assisted workflows
 
-Tech in Bloom represents her broader work at the intersection of tech access, representation, mentorship, workforce integration, and support for emerging technical talent.
+Her portfolio may show considered experimentation with AI, structured notes, and lightweight developer workflows that support planning and technical leadership.
 
-### Opportunity creation
+### Writing interest
 
-The Bloom Grant should be highlighted as an expression of investment in opportunity and access for emerging talent.
+Soul & Syntax is a forthcoming writing space for reflections on code, culture, and calling. It should be presented lightly and future-facing.
 
 ## Site sections
 
@@ -60,13 +60,13 @@ The initial landing page should remain a focused one-page experience with these 
 2. About
    Introduce her leadership perspective, technical foundation, and human-centered approach.
 3. What I Do
-   Present her core contributions across engineering leadership, frontend technology, people leadership, mentorship, and advocacy.
+   Present her core contributions across engineering leadership, frontend technology, people leadership, delivery, and clarity.
 4. Experience Highlights
    Summarize meaningful professional themes or accomplishments that establish credibility.
-5. Featured Projects and Initiatives
-   Highlight Tech in Bloom, Soul & Syntax, The Bloom Grant, and other relevant selected work.
+5. Featured Projects
+   Highlight safe-to-share current work and experiments: the professional portfolio, AI-assisted workflow experiments, and forthcoming Soul & Syntax writing space.
 6. Writing
-   Position Soul & Syntax as her writing outlet with an eventual external Substack destination.
+   Position Soul & Syntax as a forthcoming writing space with an external Substack destination only once it exists.
 7. Contact
    Provide a clear, welcoming way to connect for professional opportunities and collaboration.
 
@@ -107,13 +107,12 @@ Content should be concise, specific, and personal while remaining professionally
 
 - Lead with Shikaylah's identity as a technical people leader.
 - Balance leadership and technical credibility throughout the page rather than isolating engineering experience from management work.
-- Present advocacy, mentorship, and access work as integral to her practice.
-- Highlight Tech in Bloom as a broader initiative or branch focused on tech access, representation, mentorship, workforce integration, and emerging tech talent.
-- Highlight The Bloom Grant as a related opportunity-building initiative.
-- Represent Soul & Syntax as the writing/blog outlet and link it externally to Substack when available.
+- Highlight delivery, risk awareness, clarity, coaching, and team execution as current strengths.
+- Include thoughtful AI-assisted workflow experimentation where it reinforces technical leadership and practical working habits.
+- Represent Soul & Syntax as a forthcoming writing space and link it externally to Substack only when available.
 - Keep portfolio content static and locally managed for the initial site.
 - Use language that is warm, confident, clear, and free of generic corporate filler.
-- Never describe Shikaylah's nontraditional pathway as a deficit; it informs her perspective and leadership.
+- Never make private dreams, exploratory ideas, or not-yet-launched work sound publicly established.
 
 ## What this site is not
 
@@ -124,7 +123,8 @@ This site is not:
 - A complex web application requiring authentication, a backend, a database, or a CMS.
 - A multi-route content platform in its first version.
 - A generic resume dump or corporate personal-brand template.
-- A narrative that diminishes Shikaylah's technical expertise because her career pathway was nontraditional.
+- A vision board or umbrella brand page for possible future ventures.
+
 
 ## Future enhancements
 
@@ -132,7 +132,7 @@ Possible future additions, when content and destinations are ready:
 
 - Replace placeholder contact and social links with confirmed destinations.
 - Link Soul & Syntax to its live Substack publication.
-- Add richer project detail or external links for Tech in Bloom and The Bloom Grant.
+- Add richer details for safe-to-share professional work or workflow experiments.
 - Incorporate selected speaking engagements, publications, interviews, or testimonials.
 - Add professional photography or carefully chosen editorial imagery.
 - Improve metadata and social sharing assets for discoverability.

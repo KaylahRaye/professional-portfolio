@@ -2,17 +2,20 @@
 
 ## Project purpose
 
-This is a personal professional portfolio landing page for Shikaylah Fewell, a software engineering manager, frontend technologist, mentor, writer, and tech access advocate.
+This is a personal professional portfolio landing page for Shikaylah Fewell, a software engineering manager and frontend technologist with a people-first leadership approach and an interest in professional writing.
 
 The goal is to create a warm, polished, modern one-page website that communicates:
 - technical leadership
 - people leadership
 - frontend engineering experience
-- writing and thought leadership
-- Tech in Bloom and related initiatives
+- delivery, risk management, clarity, and team execution
+- thoughtful use of AI-assisted workflows
+- a forthcoming writing space
 - a clear way to connect
 
 Before making content, design, or professional positioning changes, review `PROJECT_BRIEF.md` for the project's product vision, identity pillars, and content strategy.
+
+This portfolio represents Shikaylah's current professional identity only. Do not add future or dream initiatives unless Shikaylah specifically asks for them later.
 
 ## Tech stack
 
@@ -83,12 +86,12 @@ src/data/profile-content.ts
 
 The content will not change frequently, so static content is preferred.
 
-Soul & Syntax should link out to Substack later. Do not build a blog into this site.
+Soul & Syntax is a forthcoming writing space and should link out to Substack only when that publication exists. Do not build a blog into this site.
 
 Preferred positioning:
 “A technical people leader helping teams, systems, and emerging talent grow with clarity and care.”
 
-Avoid language that makes Kaylah sound less technical because she came from a nontraditional background. Her nontraditional pathway is part of her perspective, not a disclaimer.
+Avoid language that makes Shikaylah sound less technical because she came from a nontraditional background. Her nontraditional pathway is part of her perspective, not a disclaimer.
 
 ## Sections
 
