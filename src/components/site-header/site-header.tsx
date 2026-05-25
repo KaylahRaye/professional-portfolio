@@ -19,8 +19,8 @@ export class SiteHeader {
           <nav aria-label={brand.navigationLabel}>
             <ul>
               {brand.navigation.map(item => (
-                <li>
-                  <a class={item.href === '#contact' ? 'nav-link nav-contact' : 'nav-link'} href={item.href}>
+                <li key={item.href}>
+                  <a class={item.highlighted ? 'nav-link nav-contact' : 'nav-link'} href={item.href}>
                     {item.label}
                   </a>
                 </li>

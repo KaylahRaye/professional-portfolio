@@ -19,7 +19,7 @@ export class ExperienceSection {
           </div>
           <div class="experience-grid">
             {experience.highlights.map(highlight => (
-              <article class="experience-card">
+              <article class="experience-card" key={highlight.title}>
                 <p class="detail">{highlight.detail}</p>
                 <h3>{highlight.title}</h3>
                 <p>{highlight.description}</p>

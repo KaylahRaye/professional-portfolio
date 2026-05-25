@@ -1,7 +1,7 @@
 {
   "name": "professional-portfolio",
   "version": "0.0.1",
-  "description": "Stencil Component Starter",
+  "description": "Professional portfolio landing page for Shikaylah Fewell.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
   "types": "dist/types/index.d.ts",
@@ -12,10 +12,6 @@
     ".": {
       "import": "./dist/professional-portfolio/professional-portfolio.esm.js",
       "require": "./dist/professional-portfolio/professional-portfolio.cjs.js"
-    },
-    "./my-component": {
-      "import": "./dist/components/my-component.js",
-      "types": "./dist/components/my-component.d.ts"
     },
     "./loader": {
       "import": "./loader/index.js",

@@ -19,10 +19,10 @@ export class HeroSection {
             <p class="positioning">{hero.positioning}</p>
             <p class="hero-introduction">{hero.introduction}</p>
             <div class="actions">
-              <a class="button button-primary" href={hero.primaryAction.href}>
+              <a class={`button button-${hero.primaryAction.variant}`} href={hero.primaryAction.href}>
                 {hero.primaryAction.label}
               </a>
-              <a class="button button-secondary" href={hero.secondaryAction.href}>
+              <a class={`button button-${hero.secondaryAction.variant}`} href={hero.secondaryAction.href}>
                 {hero.secondaryAction.label}
               </a>
             </div>
@@ -32,7 +32,7 @@ export class HeroSection {
               <p class="panel-title">{hero.focusLabel}</p>
               <ul>
                 {hero.focusAreas.map(area => (
-                  <li>{area}</li>
+                  <li key={area}>{area}</li>
                 ))}
               </ul>
             </aside>
@@ -40,7 +40,7 @@ export class HeroSection {
               <p class="panel-title">{hero.lensLabel}</p>
               <ul>
                 {hero.lensAreas.map(area => (
-                  <li>{area}</li>
+                  <li key={area}>{area}</li>
                 ))}
               </ul>
             </aside>
