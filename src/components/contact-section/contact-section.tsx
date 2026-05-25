@@ -17,9 +17,9 @@ export class ContactSection {
             <h2 id="contact-title">{contact.heading}</h2>
             <p class="contact-description">{contact.description}</p>
             <div class="contact-links">
-              {contact.links.map(link => (
+              {contact.links.map((link, index) => (
                 <a
-                  class="button button-primary"
+                  class={index === 0 ? 'button button-primary' : 'button button-secondary'}
                   href={link.href}
                   target={link.external ? '_blank' : undefined}
                   rel={link.external ? 'noreferrer' : undefined}

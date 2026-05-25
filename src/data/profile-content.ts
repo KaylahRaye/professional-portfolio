@@ -20,6 +20,7 @@ export interface ExperienceHighlight extends CardContent {
 
 export interface ProjectContent extends CardContent {
   category: string;
+  status: string;
   link?: LinkContent;
 }
 
@@ -176,18 +177,21 @@ export const profileContent: ProfileContent = {
     items: [
       {
         category: 'Frontend Engineering',
+        status: 'Current Build',
         title: 'Professional Portfolio',
         description:
           'A Stencil and TypeScript landing page built to practice web component architecture while creating a polished professional home online.',
       },
       {
         category: 'Technical Leadership',
+        status: 'In Exploration',
         title: 'AI-Assisted Workflow Experiments',
         description:
           'Exploring how AI, structured notes, and lightweight developer workflows can support knowledge management, planning, and technical leadership.',
       },
       {
-        category: 'Forthcoming Writing',
+        category: 'Thought Leadership',
+        status: 'Forthcoming',
         title: 'Soul & Syntax',
         description:
           'A forthcoming writing space for reflections on code, culture, and calling.',
@@ -196,9 +200,9 @@ export const profileContent: ProfileContent = {
   },
   contact: {
     label: 'Contact',
-    heading: 'Let us connect.',
+    heading: 'Let’s connect.',
     description:
-      'Interested in engineering leadership, frontend work, coaching, delivery, or thoughtful technical collaboration? I would be glad to connect.',
+      'If you are interested in engineering leadership, frontend craft, coaching, or thoughtful technical collaboration, I would be glad to hear from you.',
     links: [
       {
         label: 'LinkedIn placeholder',

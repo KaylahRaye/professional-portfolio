@@ -4,7 +4,7 @@
 
 .hero {
   border-bottom: 1px solid rgba(223, 207, 186, 0.55);
-  padding: clamp(4.5rem, 9vw, 7.25rem) 0 clamp(4.9rem, 9vw, 7.5rem);
+  padding: clamp(3.8rem, 7vw, 6.1rem) 0 clamp(4.1rem, 7vw, 6.35rem);
   position: relative;
 }
 
@@ -67,7 +67,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-top: 2.3rem;
+  margin-top: 2rem;
 }
 
 .hero-panels {
@@ -143,6 +143,10 @@ h1 {
 }
 
 @media (max-width: 620px) {
+  .hero {
+    padding-top: 3.2rem;
+  }
+
   .hero::after {
     height: 17rem;
     right: -8rem;
